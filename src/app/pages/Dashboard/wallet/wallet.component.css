@@ -1,0 +1,204 @@
+.wallet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D61E22; /* Red theme */
+    padding: 10px;
+  }
+  
+  .balance {
+    display: flex;
+    align-items: center;
+  }
+  
+  .balance h1 {
+    font-size: 48px;
+    color: white;
+    margin: 0;
+  }
+  
+  .dollar-sign {
+    font-size: 24px;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  /* Add additional styles for buttons as needed */
+  .label {
+    /* Your custom styles */
+    font-size: 12.5px;
+    font-weight: bold;
+     /* Example padding */
+     
+  }
+
+  h3{
+    font-weight: 600;
+  }
+
+  .Header_client {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.btn {
+    padding-left:30px;
+    padding-right: 30px;
+    background-color: #F6F8FC; 
+    border: none;
+    border-radius: 2px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color:  #D61E22;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-list-hor {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    flex-grow: 1;
+    height: 120px;
+    border-radius: 10px;
+    border: rgb(197, 197, 197) 2px solid;
+    padding: 20px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-icon {
+    background-color:#D61E22; 
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.middle {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_label {
+    font-size: 16px;
+    font-weight: 400;
+}
+.card-label-value {
+    background-color: #F6F8FC;
+    padding: 4px;
+    border-radius: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 500;
+}
+
+.card-label-value-status {
+    background-color: #059467;
+    padding: 4px;
+    color:white;
+    border-radius: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.detail_boxes{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.d1 {
+    flex-grow: 1;
+    height: 400px;
+    background-color: rgb(252, 252, 252);
+    border: rgb(219, 219, 219) 2px solid;
+     border-radius: 10px ;
+     padding: 20px;
+}
+
+.d2 {
+    flex-grow: 1;
+    height: 400px;
+    background-color: rgb(235, 235, 235);
+    border: rgb(224, 224, 224) 2px solid;
+     border-radius: 10px ;
+     padding: 20px;
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Ques {
+    font-size: 14px;
+    color: gray;
+    margin-top: 20px;
+}
+
+.Ans {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.transaction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #D61E22; /* Red theme */
+  }
+  
+  .numerical-input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .transmoney-button {
+    padding: 10px 20px;
+    background-color: #D61E22; /* Red theme */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .transmoney-button:hover {
+    background-color: #f08789; /* Lighter shade of red on hover */
+  }
+  

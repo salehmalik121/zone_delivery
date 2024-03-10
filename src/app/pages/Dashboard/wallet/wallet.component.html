@@ -1,0 +1,71 @@
+<div class="wallet-container">
+    <div class="balance">
+      <h1>${{ balance }}</h1>
+    </div>
+  </div>
+  
+
+  <mat-tab-group>
+
+    <mat-tab >
+        <ng-template mat-tab-label >
+            <span class="label">Top Up</span>
+          </ng-template>
+       <div>
+        <div class="transaction-container">
+            <input type="number" class="numerical-input" [(ngModel)]="amount" placeholder="Enter amount">
+            <button class="transmoney-button" (click)="transact()">Transmoney to account</button>
+          </div>
+       </div>
+    </mat-tab>
+   
+    <mat-tab >
+        <ng-template mat-tab-label >
+            <span class="label">Buy Product</span>
+          </ng-template>
+        <!-- dashboard.component.html -->
+
+<div class="table">
+<table mat-table [dataSource]="products" class="mat-elevation-z8 ">
+
+    <!-- Define columns -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let product">{{ product.id }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let product">{{ product.name }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef>Description</th>
+      <td mat-cell *matCellDef="let product">{{ product.description }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef>Price</th>
+      <td mat-cell *matCellDef="let product">{{ product.price }}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Actions</th>
+      <td mat-cell *matCellDef="let product">
+        <button mat-icon-button (click)="buyProduct(product._id)" >
+          <mat-icon>shopping_bag</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+  </table>
+</div>
+</mat-tab>
+
+
+
+  </mat-tab-group>
+  

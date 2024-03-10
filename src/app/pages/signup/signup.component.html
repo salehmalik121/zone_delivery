@@ -1,0 +1,38 @@
+
+<div class="signup-container">
+    <h2>Sign Up</h2>
+    <form (ngSubmit)="signup()" #signupForm="ngForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="userData['firstName']" required>
+        <div *ngIf="signupForm.controls['firstName'].invalid && signupForm.controls['firstName'].touched" class="error">First Name is required</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="userData['lastName']" required>
+        <div *ngIf="signupForm.controls['lastName'].invalid && signupForm.controls['lastName'].touched" class="error">Last Name is required</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="userData['email']" required>
+        <div *ngIf="signupForm.controls['email'].invalid && signupForm.controls['email'].touched" class="error">Email is required</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="userData['password']" required>
+        <div *ngIf="signupForm.controls['password'].invalid && signupForm.controls['password'].touched" class="error">Password is required</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" required>
+        <div *ngIf="confirmPassword !== userData['password']" class="error">Passwords do not match</div>
+      </div>
+  
+      <button type="submit" [disabled]="signupForm.invalid || confirmPassword !== userData['password']">Sign Up</button>
+    </form>
+  </div>
+  

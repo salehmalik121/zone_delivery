@@ -1,0 +1,27 @@
+<!-- sidebar.component.html -->
+<mat-drawer-container class="sidenav-container">
+    <mat-drawer #drawer class="sidenav" fixedInViewport="true" [attr.role]="(drawer.opened ? 'dialog' : 'navigation')" [mode]="'push'" >
+     
+    </mat-drawer>
+    <mat-drawer-content>
+        <div class="banner">
+            <!-- your-component.component.html -->
+
+            
+
+            <p>Zone Delivery</p>
+        </div>
+      
+      <hr class="divider" />
+      <app-button [ButtonName]="'Home'" [Icon]="'home'" route="" ></app-button>
+      <app-button [ButtonName]="'Add Product'" [Icon]="'inventory_2'" route="/addProduct" ></app-button>
+      <app-button [ButtonName]="'Wallet'" [Icon]="'account_balance_wallet'" route="/wallet" ></app-button>
+
+
+
+    </mat-drawer-content>
+
+        
+          
+  </mat-drawer-container>
+  

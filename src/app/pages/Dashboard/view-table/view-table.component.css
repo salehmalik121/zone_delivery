@@ -1,0 +1,13 @@
+.sub-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.addProductBtn{
+    background-color:#D61E22 ;
+    color: white;
+}
+
+.table{
+    overflow: scroll;
+    height: 70vh;
+}

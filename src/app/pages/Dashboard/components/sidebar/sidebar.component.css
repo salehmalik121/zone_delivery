@@ -1,0 +1,135 @@
+
+.dropdown{
+    margin-left: auto;
+}
+
+  /* sidebar.component.css */
+.sidenav-container {
+    display: flex;
+    height: 100vh;
+    
+  }
+  .sidenav {
+    width: 280px;
+    
+  }
+  mat-drawer-container {
+    background-color: #811517;
+    width: 223px;
+    flex: 1; 
+    height: 150vh;
+    color: white;
+    justify-content: center;
+    padding-top: 28px;
+  }
+  button {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    width: 180px;
+    align-items: center;
+    color: white;
+    display: flex;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 3px;
+    justify-content: center;
+  }
+  button:hover {
+    background-color: #f39fa0;
+  }
+  .mat-tree {
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+
+hr {
+    background-color: rgb(68, 68, 68);
+}
+
+
+.example-tree-invisible {
+    display: none;
+  }
+  
+  .example-tree ul,
+  .example-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+  
+  /*
+   * This padding sets alignment of the nested nodes.
+   */
+  .example-tree .mat-nested-tree-node div[role=group] {
+    padding-left: 40px;
+   
+  }
+  mat-tree {
+    background-color: #080F19;
+    color: white;
+  }
+  mat-drawer-content{
+    overflow: hidden;
+  }
+  .mat-tree-node {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    padding-left: -14px;
+    gap: 12px;
+  }
+  
+  /*
+   * Padding for leaf nodes.
+   * Leaf nodes need to have padding so as to align with other non-leaf nodes
+   * under the same parent.
+   */
+  .example-tree div[role=group] > .mat-tree-node {
+    padding-left: 0px;
+    margin-left: -20px;
+  }
+  
+
+
+  .expand-button {
+    width: max-content;
+    margin-left: auto;
+  }
+
+  .expand-button:hover {
+    background-color: transparent;
+  }
+
+  .parent-tree{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .mat-icon-rtl-mirror {
+    text-align: end;
+  }
+
+  /* Hide scrollbar */
+.sidenav-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Optional: Ensure scroll behavior is still enabled */
+  .sidenav-container {
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .banner {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+
+  .divider {
+    border: white 1px solid;
+  }
